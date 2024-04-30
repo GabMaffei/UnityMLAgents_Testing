@@ -34,4 +34,14 @@ public class Flower : MonoBehaviour
         }
     }
 
+    public float NectarAmount { get; private set; }
+
+    public bool HasNectar
+    {
+        get
+        {
+            return NectarAmount > 0f;
+        }
+    }
+
 }
